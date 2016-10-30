@@ -1,22 +1,6 @@
 -- A global variable for the Hyper Mode
 k = hs.hotkey.modal.new({}, "F17")
 
--- HYPER+L: Open news.google.com in the default browser
-lfun = function()
-  news = "app = Application.currentApplication(); app.includeStandardAdditions = true; app.doShellScript('open http://news.google.com')"
-  hs.osascript.javascript(news)
-  k.triggered = true
-end
-k:bind('', 'l', nil, lfun)
-
--- HYPER+M: Call a pre-defined trigger in Alfred 3
-mfun = function()
-  cmd = "tell application \"Alfred 3\" to run trigger \"emoj\" in workflow \"com.sindresorhus.emoj\" with argument \"\""
-  hs.osascript.applescript(cmd)
-  k.triggered = true
-end
-k:bind({}, 'm', nil, mfun)
-
 -- HYPER+E: Act like ⌃e and move to end of line.
 efun = function()
   hs.eventtap.keyStroke({'⌃'}, 'e')
