@@ -141,5 +141,5 @@ kwmc config border marked color 0xFFCC5577
 kwmc config border marked radius 6
 
 
-# SHORTCUTS
+# Windows
 kwmc rule owner="Emacs" properties={role="AXStandardWindow"}
