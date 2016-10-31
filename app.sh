@@ -19,3 +19,4 @@ brew linkapps emacs-plus
 brew install koekeishiya/kwm/kwm
 brew services start kwm
 
+brew install fzf

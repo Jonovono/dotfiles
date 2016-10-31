@@ -55,6 +55,10 @@ plugins=(git zsh-syntax-highlighting zsh-history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source enhancd/init.sh
+. z/z.sh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
