@@ -72,6 +72,10 @@
         fi \
     }; f"
 
+[user]
+  name = 'Jordan Howlett'
+  email = jordan@howlett.io
+
 [apply]
 
     # Detect whitespace errors when applying a patch

@@ -142,5 +142,4 @@ kwmc config border marked radius 6
 
 
 # SHORTCUTS
-
-kwmc bindsym cmd+alt-k window -f north
+kwmc rule owner="Emacs" properties={role="AXStandardWindow"}
