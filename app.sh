@@ -20,3 +20,4 @@ brew install koekeishiya/kwm/kwm
 brew services start kwm
 
 brew install fzf
+brew install hub
