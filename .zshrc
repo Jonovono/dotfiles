@@ -87,3 +87,16 @@ source enhancd/init.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/jordan/Downloads/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/jordan/Downloads/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/jordan/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/jordan/Downloads/google-cloud-sdk/completion.zsh.inc'
+fi
+
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$ANDROID_HOME/tools:$PATH
