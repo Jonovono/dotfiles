@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/Users/jordan/.oh-my-zsh
+export ZSH=/Users/jordan/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -97,6 +97,8 @@ fi
 if [ -f /Users/jordan/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/jordan/Downloads/google-cloud-sdk/completion.zsh.inc'
 fi
+
+[ -n "$PS1" ] && source ~/.bash_profile;
 
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$ANDROID_HOME/tools:$PATH
