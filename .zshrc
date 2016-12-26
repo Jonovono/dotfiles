@@ -56,8 +56,8 @@ plugins=(git zsh-syntax-highlighting zsh-history-substring-search)
 source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source enhancd/init.sh
-. z/z.sh
+# source enhancd/init.sh
+source ~/z/z.sh
 
 # User configuration
 
@@ -102,3 +102,9 @@ fi
 
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$ANDROID_HOME/tools:$PATH
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export GAE_SDK_ROOT="/usr/local/google_appengine"
+export PYTHONPATH=${GAE_SDK_ROOT}:${PYTHONPATH}
+
+export GOOGLE_APPLICATION_CREDENTIALS='/usr/local/google_appengine/ix.json'
