@@ -1,5 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/jordan/.oh-my-zsh
@@ -104,7 +108,8 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-export GAE_SDK_ROOT="/usr/local/google_appengine"
+export GAE_SDK_ROOT="/Users/jordan/Downloads/google-cloud-sdk/platform/google_appengine"
 export PYTHONPATH=${GAE_SDK_ROOT}:${PYTHONPATH}
 
 export GOOGLE_APPLICATION_CREDENTIALS='/usr/local/google_appengine/ix.json'
+
